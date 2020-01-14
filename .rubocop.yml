@@ -8,8 +8,6 @@ AllCops:
     - "node_modules/**/*"
   DisplayCopNames: true
 
-Metrics/LineLength:
-  Max: 120
 Metrics/MethodLength:
   Include: ["app/controllers/*"]
   Max: 20
@@ -26,6 +24,8 @@ Style/Documentation:
 Style/ClassAndModuleChildren:
   Enabled: false
 
+Layout/LineLength:
+  Max: 120
 Layout/ExtraSpacing:
   AllowForAlignment: false
 Layout/MultilineMethodCallIndentation:
