@@ -1,24 +1,60 @@
-# README
+<h3 align="center">Calculator</h3>
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+  <p align="center">
+    React Project
+    <br />
+    <br />
+    <a href="">View Demo</a>
+    ·
+    <a href="https://github.com/wathigo/react-rails-api/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/wathigo/react-rails-api/issues">Request Feature</a>
+  </p>
+</p>
 
-Things you may want to cover:
 
-* Ruby version
+<!-- TABLE OF CONTENTS -->
+## Table of Contents
 
-* System dependencies
+* [About the Project](#about-the-project)
+  * [Built With](#built-with)
+  * [Deployment](#Deployment)
+* [Contact](#Contact)
 
-* Configuration
 
-* Database creation
 
-* Database initialization
 
-* How to run the test suite
+<!-- ABOUT THE PROJECT -->
+## About The Project
+The purpose of this project is to have a good understanding of Restful API implementation in Rails and processing Json data.
 
-* Services (job queues, cache servers, search engines, etc.)
+The work done so far can be seen in the following url:
 
-* Deployment instructions
+Deployed to heroku in :
 
-* ...
+### Deployment
+
+Clone the repository to your working environment.
+
+```
+git clone git@github.com:wathigo/react-rails-api.git
+```
+Install dependencies
+
+```
+bundle install
+```
+
+Run the project on a local server
+
+```
+rails s
+```
+
+
+
+### Built With
+* [Rails](https://rubyonrails.org/)
+
+### Contact
+* [Simon Wathigo](https://github.com/wathigo) - wathigosimon@gmail.com - [Linkedin](https://www.linkedin.com/in/simon-wathigo-445370183/)
