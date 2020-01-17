@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class ApplicationController < ActionController::API
-  # include Response
+  include Response
   include ExceptionHandler
 
   before_action :authorize_request

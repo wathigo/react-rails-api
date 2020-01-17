@@ -1,5 +1,3 @@
-require_relative '../lib/message.rb'
-
 class AuthorizeApiRequest
   def initialize(headers = {})
     @headers = headers

@@ -1,4 +1,3 @@
-require_relative './excemption_handler.rb'
 
 class JsonWebToken
   # secret to encode and decode token
