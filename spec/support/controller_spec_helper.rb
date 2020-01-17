@@ -1,4 +1,6 @@
-# spec/support/controller_spec_helper.rb
+# frozen_string_literal: true
+
+
 module ControllerSpecHelper
   # generate tokens from user id
   def token_generator(user_id)

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative '../controllers/concerns/excemption_handler.rb'
 
 class AuthenticateUser

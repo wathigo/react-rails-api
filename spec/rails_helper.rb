@@ -1,4 +1,5 @@
-# This file is copied to spec/ when you run 'rails generate rspec:install'
+# frozen_string_literal: true
+
 require 'spec_helper'
 require 'database_cleaner'
 require_relative './support/controller_spec_helper.rb'
