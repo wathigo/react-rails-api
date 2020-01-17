@@ -63,5 +63,6 @@ RSpec.describe AuthorizeApiRequest do
         end
       end
     end
+    # rubocop:enable Metrics/BlockLength
   end
 end
