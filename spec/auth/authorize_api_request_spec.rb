@@ -17,6 +17,7 @@ RSpec.describe AuthorizeApiRequest do
       end
     end
 
+    # rubocop:disable Metrics/BlockLength
     context 'when invalid request' do
       context 'when missing token' do
         it 'raises a MissingToken error' do
