@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative '../controllers/concerns/excemption_handler.rb'
+require_relative '../lib/excemption_handler.rb'
 
 class AuthenticateUser
   def initialize(email, password)
