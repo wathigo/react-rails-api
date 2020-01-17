@@ -37,6 +37,8 @@ rescue ActiveRecord::PendingMigrationError => e
   exit 1
 end
 
+Dir[Rails.root.join('spec/support/**/*.rb')].each { |f| require f }
+
 Shoulda::Matchers.configure do |config|
   config.integrate do |with|
     with.test_framework :rspec
@@ -53,6 +55,8 @@ RSpec.configure do |config|
   # instead of true.
   config.use_transactional_fixtures = true
 
+  config.include RequestSpecHelper, type: :request
+  
   config.include RequestSpecHelper
   config.include ControllerSpecHelper
 
