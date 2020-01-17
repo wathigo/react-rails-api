@@ -3,13 +3,13 @@ class CategoriesController < ApplicationController
 
   # GET /categories
   def index
-    @categories = category.all
+    @categories = Category.all
     json_response(@categories)
   end
 
   # POST /categories
   def create
-    @category = category.create!(category_params)
+    @category = Category.create!(category_params)
     json_response(@category, :created)
   end
 
@@ -38,6 +38,6 @@ class CategoriesController < ApplicationController
   end
 
   def set_category
-    @category = category.find(params[:id])
+    @category = Category.find(params[:id])
   end
 end

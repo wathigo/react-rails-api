@@ -43,7 +43,7 @@ RSpec.describe 'Category API', type: :request do
       end
 
       it 'returns a not found message' do
-        expect(response.body).to match(/Couldn't find category/)
+        expect(response.body).to match("{\"message\":\"Couldn't find Category with 'id'=100\"}")
       end
     end
   end
@@ -57,7 +57,7 @@ RSpec.describe 'Category API', type: :request do
       before { post '/categories', params: valid_attributes }
 
       it 'creates a category' do
-        expect(json['name']).to eq('Housing Properties')
+        expect(json['name']).to eq(valid_attributes[:name])
       end
 
       it 'returns status code 201' do
@@ -74,7 +74,7 @@ RSpec.describe 'Category API', type: :request do
 
       it 'returns a validation failure message' do
         expect(response.body)
-          .to match(/Validation failed: name by can't be blank/)
+          .to match("{\"message\":\"Validation failed: Name can't be blank\"}")
       end
     end
   end
