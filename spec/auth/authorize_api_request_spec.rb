@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # spec/auth/authorize_api_request_spec.rb
 require 'rails_helper'
 
