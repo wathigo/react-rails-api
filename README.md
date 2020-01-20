@@ -1,4 +1,4 @@
-<h3 align="center">Calculator</h3>
+<h3 align="center">Rails API</h3>
 
   <p align="center">
     React Project
