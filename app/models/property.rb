@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Property < ApplicationRecord
   belongs_to :category, dependent: :destroy
   validates :name, presence: true

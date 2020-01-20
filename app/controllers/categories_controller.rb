@@ -1,6 +1,8 @@
+# frozen_string_literal: true
+
 class CategoriesController < ApplicationController
   skip_before_action :authorize_request
-  before_action :set_category, only: [:show, :update, :destroy]
+  before_action :set_category, only: %i[show update destroy]
 
   # GET /categories
   def index

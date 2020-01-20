@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
 RSpec.describe 'properties API' do
@@ -63,16 +65,17 @@ RSpec.describe 'properties API' do
 
   # Test suite for PUT /categories/:category_id/properties
   describe 'POST /categories/:category_id/properties' do
-    let(:valid_attributes){
+    let(:valid_attributes) do
       {
         name: 'Visit Narnia',
         address: Faker::Address.full_address,
-        price: (200000 + rand(1000000)),
+        price: rand(200_000..1_199_999),
         description: Faker::Lorem.paragraph(sentence_count: 30),
         latt: Faker::Address.latitude,
         long: Faker::Address.longitude,
         category_id: category_id
-      }}
+      }
+    end
 
     context 'when request attributes are valid' do
       before { post "/categories/#{category_id}/properties", params: valid_attributes }
@@ -107,7 +110,7 @@ RSpec.describe 'properties API' do
       end
 
       it 'updates the property' do
-        updated_property= Property.find(id)
+        updated_property = Property.find(id)
         expect(updated_property.name).to match(/Mozart/)
       end
     end

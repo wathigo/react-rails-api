@@ -1,7 +1,9 @@
+# frozen_string_literal: true
+
 class PropertiesController < ApplicationController
   skip_before_action :authorize_request
   before_action :set_category
-  before_action :set_category_property, only: [:show, :update, :destroy]
+  before_action :set_category_property, only: %i[show update destroy]
 
   # GET /categories/:category_id/properties
   def index
