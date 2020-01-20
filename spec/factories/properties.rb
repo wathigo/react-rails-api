@@ -6,7 +6,6 @@ FactoryBot.define do
     price { (200000 + rand(1000000)) }
     latt { Faker::Address.latitude }
     long { Faker::Address.longitude }
-    status { all_status.sample }
-    association :category 
+    association :category
   end
 end
