@@ -80,6 +80,6 @@ test:
 #
 production:
   <<: *default
-  database: jawaki-api_production
-  username: jawaki-api
-  password: <%= ENV['JAWAKI-API_DATABASE_PASSWORD'] %>
+  database: jawaki_api_production
+  # username: jawaki-api
+  # password: <%= ENV['JAWAKI-API_DATABASE_PASSWORD'] %>
