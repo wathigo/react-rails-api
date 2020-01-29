@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
 RSpec.describe 'Favourites API', type: :request do
@@ -6,7 +8,6 @@ RSpec.describe 'Favourites API', type: :request do
   let(:valid_attributes) { { user_id: user.id, property_id: property.id } }
 
   describe 'POST /favourites' do
-
     context 'when the request is valid' do
       before { post '/favourites', params: valid_attributes }
 
@@ -32,5 +33,4 @@ RSpec.describe 'Favourites API', type: :request do
       end
     end
   end
-
 end
